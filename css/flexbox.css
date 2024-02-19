@@ -1,0 +1,26 @@
+.deck{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: beige;
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    display: flex;
+
+    border-radius: 120px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
