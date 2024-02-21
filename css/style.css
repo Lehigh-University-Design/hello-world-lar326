@@ -231,3 +231,98 @@ h2,h3,h4 {
   }
 
 }
+
+
+
+/* Grid Lab */
+.grid-parent{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.grid-child{
+  min-height: 1em;
+  background-color: #d6d6d6;
+}
+.grid-layout-chess{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 1em;
+}
+
+.grid-child-chess{
+  aspect-ratio: 1;
+  background-color: coral;
+  transition:0.5;
+}
+
+.grid-assign-parent{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.grid-assign-child{
+  min-height: 1em;
+  background-color: #d6d6d6;
+}
+
+.grid-assign-special-child{
+  grid-row: 2/4; /* start at row 2 go to row four*/
+  grid-column: 2/4;
+  background-color: coral;
+}
+.grid-assign-special-child2{
+  grid-row: 1/5; /* start at row 2 go to row four*/
+  grid-column: 4/5;
+  background-color: coral;
+}
+
+.grid-area-parent{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 1em;
+  margin-bottom: 1em;
+  grid-template-areas:
+  'sidebar header'
+  'sidebar main';
+}
+
+.grid-area-child{
+  min-height: 1em;
+  background-color: #d6d6d6
+}
+
+.area-header{
+  grid-area: header;
+}
+
+.area-sidebar{
+  grid-area: sidebar;
+}
+
+.grid-alignment-parent{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: start;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+  background-color: #006060;
+  min-height: 15em;
+}
+
+.grid-alignment-child{
+  width: 100px;
+  min-height: 1em;
+  background-color: #d6d6d6;
+}
+
+/* place-content: center*/
